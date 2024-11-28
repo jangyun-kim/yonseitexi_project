@@ -21,3 +21,30 @@
 .box-3 {
   background-color: #dfffd6; /* Hex: DFFFD6 */
 }
+
+.box h2 {
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.important {
+  margin-bottom: 30px;
+}
+
+.list-important {
+  color: red;
+}
+
+.list {
+  text-align: left;
+  margin-left: 35px;
+}
+
+.list li {
+  margin-top: 10px;
+}
+
+.recommend-btn {
+  display: inline-block;
+}

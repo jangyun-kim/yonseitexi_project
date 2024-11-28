@@ -28,3 +28,18 @@
   display: inline-block;
   margin-right: 15rem;
 }
+
+.logout-btn {
+  display: inline-block;
+  margin-right: 5rem;
+  margin-left: 15rem;
+}
+
+.btn-before {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#before-button {
+  margin: 5px 15px;
+}

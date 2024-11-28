@@ -23,6 +23,14 @@
         </div>
       </div>
 
+      <form action="index.html">
+        <div class="logout-btn">
+          <button class="button btn-before">
+            <div id="before-button" type="submit">LOG OUT</div>
+          </button>
+        </div>
+      </form>
+
       <div class="interface info-interface">
         <div class="main-container">
           <div class="box box-1">
@@ -50,11 +58,12 @@
           <div class="box box-2">
             <h2>2. 연락 주의사항</h2>
             <p class="important">
-              중요: 연세 택시는 전화번호의 정확한 활용을 통해 운영됩니다.
+              ⭐중요: 연세 택시는 전화번호의 정확한 활용을 통해 운영됩니다.
             </p>
             <ul class="list">
-              <li>
-                2-1. *중요* 연택 탑승시 다른 목적지인 일행은 동승 불가능합니 다.
+              <li class="list-important">
+                2-1. ⭐중요⭐ 연택 탑승시 다른 목적지인 일행은 동승
+                불가능합니다.
               </li>
               <li>
                 2-2. 5호차 00월 00일 010-4444-5555 로 전화번호 바뀔 예정 입니다
@@ -72,14 +81,48 @@
           <div class="box box-3">
             <h2>3. 연락 전화번호 LIST</h2>
             <ul class="list">
-              <li>010-xxxx-xxxx 👍 3</li>
-              <li>010-xxxx-xxxx 👍 5</li>
-              <li>010-xxxx-xxxx 👍 1</li>
+              <li class="list-item">
+                <span>010-xxxx-xxxx</span>
+                <div>
+                  <button class="recommend-btn" onclick="recommend(0)">
+                    👍추천
+                  </button>
+                  <span class="recommend-count" id="count-0">0</span>
+                </div>
+              </li>
+              <li class="list-item">
+                <span>010-yyyy-yyyy</span>
+                <div>
+                  <button class="recommend-btn" onclick="recommend(1)">
+                    👍추천
+                  </button>
+                  <span class="recommend-count" id="count-1">0</span>
+                </div>
+              </li>
+              <li class="list-item">
+                <span>010-zzzz-zzzz</span>
+                <div>
+                  <button class="recommend-btn" onclick="recommend(2)">
+                    👍추천
+                  </button>
+                  <span class="recommend-count" id="count-2">0</span>
+                </div>
+              </li>
             </ul>
-            <p>추천번호는 <strong>(사용 빈도에 기반)</strong> 기록됩니다.</p>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      // Array to store recommendation counts
+      const counts = [0, 0, 0];
+
+      // Function to handle recommendation clicks
+      function recommend(index) {
+        counts[index]++; // Increment the count for the specific phone number
+        document.getElementById(`count-${index}`).textContent = counts[index]; // Update the displayed count
+      }
+    </script>
   </body>
 </html>
