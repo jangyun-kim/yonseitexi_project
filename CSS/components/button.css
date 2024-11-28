@@ -1,0 +1,30 @@
+.button-interface {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0rem 5rem;
+}
+
+.button {
+  background-color: #002366;
+  color: white;
+  font-size: 25px;
+  height: 80px;
+  width: 100px;
+  border-radius: 30%;
+  font-family: "RiaSans-ExtraBold", sans-serif;
+}
+
+.button-interface * {
+  height: 100%;
+}
+
+.left-button {
+  display: inline-block;
+  margin-right: 5rem;
+  margin-left: 15rem;
+}
+
+.right-button {
+  display: inline-block;
+  margin-right: 15rem;
+}

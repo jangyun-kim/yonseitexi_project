@@ -1,0 +1,26 @@
+@import "reset.css";
+@import "font.css";
+@import "screens/index.css";
+@import "screens/info.css";
+@import "screens/student.css";
+@import "screens/both-main.css";
+@import "components/title.css";
+@import "components/button.css";
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/연세\ 투명\ 로고.png");
+  font-family: "RiaSans-ExtraBold";
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}

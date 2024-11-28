@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.interface {
+  margin: 2.5rem 5rem;
+  text-align: center;
+}
+
+.main-interface {
+  padding: 5rem;
+  flex-grow: 1;
+}
+
+.main-interface form {
+  display: inline-block;
+}
+
+#notice {
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+
+#status1,
+#status2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px 0px;
+}
