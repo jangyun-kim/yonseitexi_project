@@ -23,14 +23,6 @@
         </div>
       </div>
 
-      <form action="index.html">
-        <div class="logout-btn">
-          <button class="button btn-before">
-            <div id="before-button" type="submit">LOG OUT</div>
-          </button>
-        </div>
-      </form>
-
       <div class="interface info-interface">
         <div class="main-container">
           <div class="box box-1">
@@ -52,14 +44,15 @@
                 1-4. 택시를 타고 목적지에 도착하면 계좌번호나 카드로 계산 후
                 하차한다.
               </li>
+
+              <div class="add-btn">
+                <button class="add-anounce">추가</button>
+              </div>
             </ul>
           </div>
 
           <div class="box box-2">
             <h2>2. 연락 주의사항</h2>
-            <p class="important">
-              ⭐중요: 연세 택시는 전화번호의 정확한 활용을 통해 운영됩니다.
-            </p>
             <ul class="list">
               <li class="list-important">
                 2-1. ⭐중요⭐ 연택 탑승시 다른 목적지인 일행은 동승
@@ -68,21 +61,20 @@
               <li>
                 2-2. 5호차 00월 00일 010-4444-5555 로 전화번호 바뀔 예정 입니다
               </li>
-              <li>2-3. 11호차 0OO기사님-월-일 퇴사 예정입니다.</li>
+              <li>2-3. 11호차 0OO기사님 OO월OO일 퇴사 예정입니다.</li>
               <li>2-4. 13호차 기사님 금일 22시30분까지 운행할 예정입니다.</li>
               <li>
-                2-5. 가격표 타 인원과 동승시 원주역 6000 무실 7000 터미널 8000
+                2-5. 가격표: 타 인원과 동승시 원주역 6000 무실 7000 터미널 8000
                 개인일 시 1000씩 부과
               </li>
             </ul>
-            <button>추가</button>
           </div>
 
           <div class="box box-3">
             <h2>3. 연락 전화번호 LIST</h2>
             <ul class="list">
               <li class="list-item">
-                <span>010-xxxx-xxxx</span>
+                <span>010-1234-5678</span>
                 <div>
                   <button class="recommend-btn" onclick="recommend(0)">
                     👍추천
@@ -91,7 +83,7 @@
                 </div>
               </li>
               <li class="list-item">
-                <span>010-yyyy-yyyy</span>
+                <span>010-9101-1121</span>
                 <div>
                   <button class="recommend-btn" onclick="recommend(1)">
                     👍추천
@@ -100,7 +92,7 @@
                 </div>
               </li>
               <li class="list-item">
-                <span>010-zzzz-zzzz</span>
+                <span>010-3141-5161</span>
                 <div>
                   <button class="recommend-btn" onclick="recommend(2)">
                     👍추천
@@ -115,13 +107,11 @@
     </div>
 
     <script>
-      // Array to store recommendation counts
       const counts = [0, 0, 0];
 
-      // Function to handle recommendation clicks
       function recommend(index) {
-        counts[index]++; // Increment the count for the specific phone number
-        document.getElementById(`count-${index}`).textContent = counts[index]; // Update the displayed count
+        counts[index]++;
+        document.getElementById(`count-${index}`).textContent = counts[index];
       }
     </script>
   </body>

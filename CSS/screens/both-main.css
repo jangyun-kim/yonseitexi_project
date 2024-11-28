@@ -37,6 +37,8 @@
 }
 
 .list {
+  display: flex;
+  flex-direction: column;
   text-align: left;
   margin-left: 35px;
 }
@@ -45,6 +47,26 @@
   margin-top: 10px;
 }
 
-.recommend-btn {
+.list-item {
+  display: flex;
+}
+
+.list-item span {
+  margin-right: auto;
+}
+.recommend-btn,
+.add-anounce {
   display: inline-block;
+  background-color: #002366;
+  color: white;
+  font-size: 15px;
+  height: 40px;
+  width: 70px;
+  border-radius: 30px;
+  font-family: "RiaSans-ExtraBold", sans-serif;
+}
+
+.add-btn {
+  display: flex;
+  margin-left: 93%;
 }

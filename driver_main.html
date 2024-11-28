@@ -23,13 +23,27 @@
         </div>
       </div>
 
-      <div class="interface info-interface">
-        <div class="title">
-          <div class="title-set">
-            <p class="title-yonsei">기사님</p>
-            <p class="title-texi">페이지 개발 중</p>
+      <div class="interface main-interface">
+        <h2>Mobile Authentication</h2>
+        <form>
+          <div>
+            <label for="phone-number">Enter Your Phone Number</label>
+            <input type="text" id="phone-number" placeholder="010-1234-5678" />
           </div>
-        </div>
+          <button type="button">Send Code</button>
+
+          <div class="code-section">
+            <label for="auth-code">Enter Authentication Code</label>
+            <input type="number" id="auth-code" placeholder="Enter the code" />
+            <button type="button">Verify Code</button>
+          </div>
+        </form>
+        <p class="message success" style="display: none">
+          Phone number verified successfully!
+        </p>
+        <p class="message error" style="display: none">
+          Invalid code. Please try again.
+        </p>
       </div>
     </div>
   </body>
