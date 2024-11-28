@@ -9,12 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>연택 | 기사님 | 메인</title>
+    <title>연택 | 기사님 | 본인인증</title>
   </head>
 
-  <body id="body-pd">
+  <body id="body-driver">
     <div class="wrapper">
-      <div class="interface title-interface">
+      <div class="interface title-interface ">
         <div class="title">
           <div class="title-set">
             <p class="title-yonsei">Yonsei</p>
@@ -23,27 +23,62 @@
         </div>
       </div>
 
-      <div class="interface main-interface">
-        <h2>Mobile Authentication</h2>
-        <form>
-          <div>
-            <label for="phone-number">Enter Your Phone Number</label>
-            <input type="text" id="phone-number" placeholder="010-1234-5678" />
-          </div>
-          <button type="button">Send Code</button>
+      <div class="interface main-interface proof-page">
+        <div class="proof-title">
+          <div class="pass-header">PASS</div>
+          <form action="index.html" method="get" id="close-driver-proof">
+            <button class="close-btn">×</button>
+          </form>
+        </div>
+        <p>이용 중이신 통신사를 선택하세요.</p>
 
-          <div class="code-section">
-            <label for="auth-code">Enter Authentication Code</label>
-            <input type="number" id="auth-code" placeholder="Enter the code" />
-            <button type="button">Verify Code</button>
-          </div>
+        <div class="telecom-grid">
+            <div class="telecom-item telecom-sk">
+                <img src="https://www.sktelecom.com/images/introduce/2021/skt-ci_sm.png?v2" alt="SK Telecom">
+            </div>
+            <div class="telecom-item telecom-kt">
+                <img src="https://corp.kt.com/images/kt/kt-ci.png?ver=2022120801" alt="KT">
+            </div>
+            <div class="telecom-item telecom-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/LG_U%2B_CI.svg/140px-LG_U%2B_CI.svg.png" alt="LG U+">
+            </div>
+            <div class="telecom-item telecom-cheap">
+                <img src="https://i.namu.wiki/i/krEa6XbFQ4OnkESHpDuJ6ZJj8UjD7X0g4oRgrTUiOslomhgt2dFM1_9gPGlePnq_KOPEqNq2ZVSgViuDmMKOtA.svg" alt="알뜰폰">
+            </div>
+        </div>
+
+        <div class="cheap-info">
+            <p>알뜰폰이란?<br>이동통신사(SK, KT, LGU+)의 통신망을 임대하여 별도의 <br>휴대폰 서비스(MVNO)를 제공하는 업체를 말합니다.</p>
+        </div>
+
+        <div class="checkbox-all">
+          <label>
+            <input type="checkbox">
+            본인확인을 위한 필수사항에 전체 동의합니다.
+        </label>
+        </div>
+        <div class="checkbox-grid">
+            <label>
+                <input type="checkbox">
+                개인정보이용동의
+            </label>
+            <label>
+                <input type="checkbox">
+                고유식별정보처리동의
+            </label>
+            <label>
+                <input type="checkbox">
+                서비스이용약관동의
+            </label>
+            <label>
+                <input type="checkbox">
+                통신사이용약관동의
+            </label>
+        </div>
+
+        <form action="driver-main.html" method="get" id="start-form">
+          <button class="start-btn">시작하기</button>
         </form>
-        <p class="message success" style="display: none">
-          Phone number verified successfully!
-        </p>
-        <p class="message error" style="display: none">
-          Invalid code. Please try again.
-        </p>
       </div>
     </div>
   </body>

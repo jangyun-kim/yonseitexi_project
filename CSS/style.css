@@ -3,7 +3,11 @@
 @import "screens/index.css";
 @import "screens/info.css";
 @import "screens/student.css";
+@import "screens/driver.css";
 @import "screens/both-main.css";
+@import "screens/driver-main.css";
+@import "screens/student-main.css";
+@import "screens/driver-edit.css";
 @import "components/title.css";
 @import "components/button.css";
 

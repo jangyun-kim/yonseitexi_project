@@ -15,11 +15,11 @@
 }
 
 .box-2 {
-  background-color: #96d8ff; /* Hex: 96D8FF */
+  background-color: #96d8ff;
 }
 
 .box-3 {
-  background-color: #dfffd6; /* Hex: DFFFD6 */
+  background-color: #dfffd6;
 }
 
 .box h2 {
@@ -51,19 +51,12 @@
   display: flex;
 }
 
+.list-item h3 {
+  margin-right: 30px;
+}
+
 .list-item span {
   margin-right: auto;
-}
-.recommend-btn,
-.add-anounce {
-  display: inline-block;
-  background-color: #002366;
-  color: white;
-  font-size: 15px;
-  height: 40px;
-  width: 70px;
-  border-radius: 30px;
-  font-family: "RiaSans-ExtraBold", sans-serif;
 }
 
 .add-btn {

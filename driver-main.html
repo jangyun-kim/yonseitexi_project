@@ -9,10 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>연택 | 재학생 | 메인</title>
+    <title>연택 | 기사님 | 메인</title>
   </head>
 
-  <body id="body-pd">
+  <body id="body-driver">
     <div class="wrapper">
       <div class="interface title-interface">
         <div class="title">
@@ -67,6 +67,10 @@
                 2-5. 가격표: 타 인원과 동승시 원주역 6000 무실 7000 터미널 8000
                 개인일 시 1000씩 부과
               </li>
+
+              <div class="add-btn">
+                <button class="add-anounce">추가</button>
+              </div>
             </ul>
           </div>
 
@@ -74,30 +78,36 @@
             <h2>3. 연락 전화번호 LIST</h2>
             <ul class="list">
               <li class="list-item">
+                <h3>21호</h3>
                 <span>010-1234-5678</span>
                 <div>
-                  <button class="recommend-btn" onclick="recommend(0)">
-                    👍추천
-                  </button>
-                  <span class="recommend-count" id="count-0">0</span>
+                  <form action="driver-edit.html" method="get">
+                    <button class="ed-btn" >
+                      수정/삭제
+                    </button>
+                  </form>
                 </div>
               </li>
               <li class="list-item">
+                <h3>15호</h3>
                 <span>010-9101-1121</span>
                 <div>
-                  <button class="recommend-btn" onclick="recommend(1)">
-                    👍추천
-                  </button>
-                  <span class="recommend-count" id="count-1">0</span>
+                  <form action="driver-edit.html" method="get">
+                    <button class="ed-btn" >
+                      수정/삭제
+                    </button>
+                  </form>
                 </div>
               </li>
               <li class="list-item">
+                <h3>12호</h3>
                 <span>010-3141-5161</span>
                 <div>
-                  <button class="recommend-btn" onclick="recommend(2)">
-                    👍추천
-                  </button>
-                  <span class="recommend-count" id="count-2">0</span>
+                  <form action="driver-edit.html" method="get">
+                    <button class="ed-btn">
+                      수정/삭제
+                    </button>
+                  </form>
                 </div>
               </li>
             </ul>
@@ -105,14 +115,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      const counts = [0, 0, 0];
-
-      function recommend(index) {
-        counts[index]++;
-        document.getElementById(`count-${index}`).textContent = counts[index];
-      }
-    </script>
   </body>
 </html>

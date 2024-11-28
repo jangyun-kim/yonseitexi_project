@@ -1,0 +1,63 @@
+.driver-phone {
+    border: solid;
+    border-color: #96d8ff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.driver-phone h2 {
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.how-to {
+    font-size: 30px;
+}
+
+.submit-info {
+    width: 1000px;
+}
+
+#submit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 30px;
+}
+
+#submit-form input {
+    padding: 15px 18px;
+    border: none;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "RiaSans-ExtraBold", sans-serif;
+}
+
+#submit-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#submit-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#submit-form input:focus {
+    border-color: var(--pink);
+}
+
+#submit-form input[type="submit"] {
+    background-color: #03468f;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 20px 0;
+    width: 100px;
+}
+
+#submit-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}

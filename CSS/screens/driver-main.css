@@ -1,0 +1,15 @@
+#body-driver {
+    background-image: none;
+}
+
+.ed-btn,
+.add-anounce {
+    display: inline-block;
+    background-color: #002366;
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    font-family: "RiaSans-ExtraBold", sans-serif;
+}
